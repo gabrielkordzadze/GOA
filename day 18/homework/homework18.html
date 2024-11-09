@@ -1,0 +1,71 @@
+<!-- 1)კომენტარის სახით ახსენით required / disabled / name / for / id / type ატრიბუტების დანიშნულებელი და რასთან ვიყენებთ -->
+
+<!--required რომელ input-საც გავუწერთ მისი შევსება აუცილებელია-->
+
+<!-- HTML-ში “disabled” არის ატრიბუტი, რომელიც გამოიყენება ფორმის ელემენტების (მაგ., <button>, <input>, <select>) დროებით გასააქტიურებლად. 
+disabled ატრიბუტის მქონე ელემენტი ხდება ნაცრისფერი და მომხმარებელს არ შეუძლია მისი გამოყენება, სანამ ატრიბუტი არ იქნება ამოღებული -->
+
+<!-- HTML-ში “name” ატრიბუტი  ელემენტებს უნიკალურ სახელს ანიჭებს, რათა სერვერმა გაგზავნისას შეძლოს მათი ამოცნობა და შესაბამისი 
+მონაცემების მიღება. -->
+
+<!-- HTML-ში “for” ატრიბუტი <label>-ში გამოიყენება და აკავშირებს label-ს ფორმის ელემენტთან (მაგ: <input>) რათა მომხმარებელს მოხერხებულად 
+დააჭიროს label-ს და გააქტიურდეს შესაბამისი ელემენტი.-->
+
+<!-- ID არის უნიკალური სახელი რომელიც გამოიყენება HTML-ში და ის გამოიყენება იმისთვის რომ ელემენტი იყოს ადვილად მოსაძბნი,ამოსაცნობი -->
+
+<!-- HTML-ში “type” ატრიბუტი განსაზღვრავს ფორმის ელემენტის ტიპს (მაგ: <input>, <button>) მაგალითად, ტექსტის ველი, პაროლი, ღილაკი და სხვა -->
+
+
+
+
+<!-- 2)შექმენით სარეგისტრაციო ფორმა, სადაც მომხმარებელს შემოატანინებთ: სახელს, გვარს, ემაილს, პაროლს და ამ ფორმაში ჩააშენეთ drop down menu,
+სადაც მომხმარებელს შეეკითხებით მის ქვეყანას (georgia, france, spain...)-->
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <id="register"></id>
+    <h2>Register</h2>
+    <form>
+    <h2>რეგისტრაცია</h2>
+    <label for="first_name">სახელი:</label>
+    <input type="text" id="first_name" name="first_name" required><br><br>
+
+    <label for="last_name">გვარი:</label>
+    <input type="text" id="last_name" name="last_name" required><br><br>
+
+    <label for="email">ემაილი:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="password">პაროლი:</label>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <label for="country">ქვეყანა:</label>
+    <select id="country" name="country" required>
+        <disabled><option value="none"></option></disabled>
+        <option value="georgia">საქართველო</option>
+        <option value="france">საფრანგეთი</option>
+        <option value="spain">ესპანეთი</option>
+        <option value="usa">აშშ</option>
+        <option value="germany">გერმანია</option>
+        <option value="italy">იტალია</option>
+    </select><br><br>
+
+    <button type="submit">registration</button>
+</form>
+</body>
+</html>
+
+
+
+
+
+<!-- 3)შექმენით საიტი თქვენს საყვარელ იუთუბერებზე, სადაც გექნებათ heading-ით გამოტანილი ამ იუთუბერის სახელი, პარაგრაფით დაწერილი მასზე მცირე 
+ინფორმაცია და უნდა გქონდეთ დართული მათი ერთერთი ვიდეო <video> თეგის გამოყენებით, ქვემოთ კი დაამატეთ ღილაკი რომელიც გადაგიყვანთ მათ 
+იუთუბ არხზე (უნდა გქონდეთ მინიმუმ 3 მაგალითი)-->
+    
+   
