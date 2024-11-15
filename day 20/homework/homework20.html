@@ -1,0 +1,177 @@
+
+
+<!-- 1. რაში გვჭირდება <header>, <main> და <footer> თეგები? -->
+
+    Page Layout თეგები (<header>, <main>, <footer>) გამოიყენება ვებგვერდის სტრუქტურის დასადგენად და მისი სექციების ლოგიკურად დაყოფისთვის.
+        •	<header>:
+    გამოიყენება საიტის ან სექციის ზედა ნაწილის განსაზღვრად, როგორიცაა ლოგო, ნავიგაცია ან სათაურები.
+    მაგალითად:
+    
+    <header>
+        <h1>ჩემი ვებგვერდი</h1>
+        <nav>
+            <a href="#">მთავარი</a>
+            <a href="#">ჩვენ შესახებ</a>
+        </nav>
+    </header>
+    
+    
+        •	<main>:
+    მოიცავს ვებგვერდის ძირითად კონტენტს, რომელიც უნიკალურია თითოეული გვერდისთვის.
+    მაგალითად:
+    
+    <main>
+        <h2>სტატია</h2>
+        <p>აქაა ტექსტი...</p>
+    </main>
+    
+    
+        •	<footer>:
+    გამოიყენება გვერდის ბოლოში განთავსებული კონტენტისთვის, როგორიცაა საკონტაქტო ინფორმაცია, საავტორო უფლებები ან ბმულები.
+    მაგალითად:
+    
+    <footer>
+        <p>© 2024 ყველა უფლება დაცულია</p>
+    </footer>
+    
+    <!-- 2. საიტი 5 ვიდეოთი და 5 აუდიოთი -->
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ვიდეო და აუდიო</title>
+    </head>
+    <body>
+        <h1>5 ვიდეო და 5 აუდიო</h1>
+    
+        <h2>ვიდეოები</h2>
+        <video controls autoplay muted loop width="320">
+            <source src="video1.mp4" type="video/mp4">
+            თქვენი ბრაუზერი არ უჭერს მხარს ვიდეოს.
+        </video>
+        <p>1. ვიდეო #1</p>
+        <!--
+        * controls: აჩვენებს კონტროლის პანელს (დაკვრის, პაუზის ღილაკი და სხვ.)
+        * autoplay: ვიდეო იწყება ავტომატურად
+        * muted: ვიდეო იწყება ხმის გარეშე
+        * loop: ვიდეო ირთვება თავიდან, როდესაც დასრულდება
+        -->
+    
+        <video controls width="320">
+            <source src="video2.mp4" type="video/mp4">
+        </video>
+        <p>2. ვიდეო #2</p>
+    
+    
+        <h2>აუდიოები</h2>
+        <audio controls autoplay muted loop>
+            <source src="audio1.mp3" type="audio/mpeg">
+            თქვენი ბრაუზერი არ უჭერს მხარს აუდიოს.
+        </audio>
+        <p>1. აუდიო #1</p>
+    
+        <audio controls>
+            <source src="audio2.mp3" type="audio/mpeg">
+        </audio>
+        <p>2. აუდიო #2</p>
+    
+        
+    
+    </body>
+    </html>
+    
+    <!-- 3. ცხოველების ხმები ფოტოსა და სახელებთან ერთად -->
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ცხოველები</title>
+    </head>
+    <body>
+        <h1>ცხოველები</h1>
+    
+        <div>
+            <h2>ლომი</h2>
+            <img src="lion.jpg" alt="ლომი" width="300">
+            <audio controls>
+                <source src="lion-sound.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    
+        <div>
+            <h2>სპილო</h2>
+            <img src="elephant.jpg" alt="სპილო" width="300">
+            <audio controls>
+                <source src="elephant-sound.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    
+        <!-- დამატებითი ცხოველები -->
+    </body>
+    </html>
+    
+    <!-- 4. საყვარელი ფილმების ტრეილერები და მუსიკები -->
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ჩემი საყვარელი ფილმები</title>
+    </head>
+    <body>
+        <h1>ჩემი საყვარელი ფილმები და მუსიკები</h1>
+    
+   
+   
+    <!-- საყვარელი ფილმები გვერდი -->
+    
+    <h1>ჩემი საყვარელი ფილმების ტრეილერები</h1>
+
+    <h2>ღმერთების ომი</h2>
+     <video controls width="600" poster="images/wrath_of_the_gods.jpg">
+        <source src="./videoplayback (3).mp4" type="video/mp4">
+        <source src="./videoplayback (3).mp4" type="video/webm">
+            თქვენი ბრაუზერი არ უჭერს მხარს ვიდეოს ფორმატს.
+    </video>
+
+    <h2>ერაგონი</h2>
+    <video controls width="600" poster="images/eragon.jpg">
+        <source src="videos/eragon_trailer.mp4" type="video/mp4">
+        <source src="videos/eragon_trailer.webm" type="video/webm">
+            თქვენი ბრაუზერი არ უჭერს მხარს ვიდეოს ფორმატს.
+    </video>
+
+    <h2>ტიტანების შერკინება</h2>
+    <video controls width="600" poster="images/clash_of_the_titans.jpg">
+         <source src="./Clash of the Titans - Official Trailer [HD].mp4" type="video/mp4">
+         <source src="./Clash of the Titans - Official Trailer [HD].mp4" type="video/webm">
+          თქვენი ბრაუზერი არ უჭერს მხარს ვიდეოს ფორმატს
+
+        <h2>მუსიკები</h2>
+      
+
+    <!-- საყვარელი მუსიკა გვერდი -->
+    
+    <h1>ჩემი საყვარელი მუსიკა</h1>
+
+     <h2>ინტელიგენცია</h2>
+    <audio controls>
+        <source src="./anyutube-win (2).exe" type="audio/mp3">
+        <source src="./anyutube-win (2).exe" type="audio/ogg">
+         თქვენი ბრაუზერი არ უჭერს მხარს აუდიოს ფორმატს.
+    </audio>
+
+    <h2>გადაწყვეტილად</h2>
+    <audio controls>
+         <source src="audio/music2.mp3" type="audio/mp3">
+        <source src="audio/music2.ogg" type="audio/ogg">
+          თქვენი ბრაუზერი არ უჭერს მხარს აუდიოს ფორმატს.
+     </audio>
+  
+    </body>
+    </html>
