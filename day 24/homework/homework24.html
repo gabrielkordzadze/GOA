@@ -1,0 +1,132 @@
+<!-- 1)კომენტარის სახით ახსენით Inline და Block Level ელემენტები (მოიყვანეთ თითოზე 3 მაგალითი) -->
+
+<!-- inline ელემენტები განლაგებულია ერთ ხაზზე და არ იწყებს ახალ ხაზს. -->
+<!-- Inline ელემენტები ძირითადად გამოიყენება ტექსტის შიგნით ფორმატირებისთვის. -->
+<!-- მაგალითები: -->
+1.	<span>
+2.	<a>
+3.	<img>
+<!-- Block Level ელემენტები -->
+<!-- Block Level ელემენტები ავტომატურად იწყებენ ახალ ხაზს და იკავებენ სრულ სიგანეს (default behavior). -->
+<!-- გამოიყენება კონტენტის ბლოკებად ორგანიზებისთვის. -->
+<!-- მაგალითები: -->
+1.	<div>
+2.	<p>
+3.	<h1>
+
+
+<!-- 2)კომენტარის სახით ახსენით Inline CSS / Internal CSS / External CSS -->
+<!-- Inline CSS -->
+<!-- გამოიყენება უშუალოდ HTML ელემენტში style ატრიბუტის გამოყენებით. -->
+<!-- მაგალითი: -->
+
+
+
+
+<!-- დადებითი: მარტივი დასამატებელია ერთეული ელემენტისთვის. -->
+<!-- მინუსი: რთულია დიდი პროექტების მართვა. -->
+
+<!-- Internal CSS -->
+<!-- განთავსებულია <style> თეგში HTML დოკუმენტის <head> ნაწილში. -->
+ <!-- მაგალითი:  -->
+
+
+
+
+
+<!--  დადებითი: მარტივი გამოსაყენებელია ერთ გვერდზე.  -->
+<!--  მინუსი: რთულია, როდესაც ერთზე მეტ გვერდზე გჭირდებათ სტილის ერთობლიობა.  -->
+
+ <!-- External CSS  -->
+ <!-- CSS განთავსებულია ცალკე .css ფაილში და HTML ფაილთან არის დაკავშირებული <link> თეგის მეშვეობით -->
+ <!-- მაგალითი:  -->
+
+
+ <!-- დადებითი: მრავალჯერადი გამოყენება და ერთიანი მართვა.    -->
+ <!-- მინუსი: საჭიროებს დამატებით ფაილს.  -->
+
+
+
+<!-- 3)შექმენით დიდი საიტი GOA-ს შესახებ, სადაც გამოიყენებთ ყველა განვლილ თეგს, გამოიყენებთ CSS ყველა ნასწავლ კუთვლნილებას (საიტი უნდა იყოს მაქსიმალურად დახვეწილი დიზაინით) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOA-ს შესახებ</title>
+</head>
+<body style="font-size: large; background-color: white; margin: 0; ">
+    <div style="text-align: center; background-color: #00796b; color: white;">
+        <h1 style="font-size: 2.5em;">GOA - დასვენების მხარე</h1>
+        <p style="font-size: 1.2em;">ნაწილი ინდოეთის, რომელიც ცნობილია თავისი მშვენიერი სანაპიროებით</p>
+    </div>
+    
+    <div style="width: 80%; margin: 40px auto; padding: 20px; background-color: white; ">
+        <h2 style="color: #00796b; text-align: center;">მშვენიერი სანაპიროები</h2>
+        <p style="text-align: center;">GOA ცნობილია თავისი სანაპიროებით, რომლებიც ბუნებრივი სილამაზით გაოგნებთ. შეგიძლიათ იხილოთ ოქროს ხვისი ქვიშა და წყლის სიმარტივე.</p>
+        <img src="https://example.com/beach.jpg" alt="Beach Image" width="300" style="border: 2px solid #00796b;  max-width: 100%; height: auto; margin-top: 20px; display: block; margin-left: auto; margin-right: auto;">
+    </div>
+
+    <div style="width: 80%; margin: 40px auto; padding: 20px; background-color: white; ">
+        <h2 style="color: #00796b; text-align: center;">კულტურა და ისტორია</h2>
+        <p style="text-align: center;">GOA-ს კულტურა მიჯნულია სხვადასხვა გავლენით - პორტუგალიური კოლონიების, ინდოეთის ტრადიციებისა და თანამედროვე გლობალიზაციის ერთობლიობა ქმნის უნიკალურ კულტურულ გამოცდილებას.</p>
+        <img src="https://example.com/culture.jpg" alt="Culture Image" width="300" style="border: 2px solid #00796b; border-radius: 5px; max-width: 100%; height: auto; margin-top: 20px; display: block; margin-left: auto; margin-right: auto;">
+    </div>
+
+    <div style="width: 80%; margin: 40px auto; padding: 20px; background-color: white; border-radius: 8px;">
+        <h2 style="color: #00796b; text-align: center;">აქტივობები</h2>
+        <p style="text-align: center;">GOA-ში შეგიძლიათ მოაწყოთ ველოსიპედით, მოაწყვოთ სასიამოვნო გემი ტური ან მიიღოთ მონაწილეობა კულტურულ ღონისძიებებში.</p>
+        <img src="https://example.com/activities.jpg" alt="Activities Image" width="300" style="border: 2px solid #00796b; border-radius: 5px; max-width: 100%; height: auto; margin-top: 20px; display: block; margin-left: auto; margin-right: auto;">
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+<!-- 4)შექმენით საიტი რომელიც იქნება თქვენი საყვარელი საჭმელების შესახებ, საიტზე თითოეული საჭმლის ინფორმაცია და სურათი უნდა იყოს div ბლოკებში ჩასმული, div ბლოკებს უნდა გაუკეთოთ შავი border სურვილისამებრ შეგიძლიათ ტექსტაც შეუცვალოთ ფერი და ზომა -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ჩემი საყვარელი საჭმელები</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f4f4f4; ">
+    <header style="background-color: #4CAF50; color: white; text-align: center; ;">
+        <h1 style="font-size: 3em;">ჩემი საყვარელი საჭმელები</h1>
+    </header>
+
+    <!-- პირველი საჭმელი: ჰამბურგერი -->
+    <div style="width: 80%; margin: 20px auto;  border: 2px solid black; background-color: #fff; ">
+        <h2 style="color: #333; font-size: large; text-align: center;">ჰამბურგერი</h2>
+        <img src="https://example.com/hamburger.jpg" alt="Hamburger" width="300" style="display: block;  border: 2px solid #4CAF50;">
+        <p style="font-size: 1.2em; text-align: center; color: #555;">ჰამბურგერი - ის საუცხოო საკვები, რომელიც ხორცის და სხვა ინგრედიენტების კომბინაციით მზადდება. ეს არის ჩემი საყვარელი საჭმელი!</p>
+    </div>
+
+    <!-- მეორე საჭმელი: პიცა -->
+    <div style="width: 80%; margin: 20px auto; padding: 20px; border: 2px solid black; background-color: #fff; ">
+        <h2 style="color: #333; font-size: 2em; text-align: center;">პიცა</h2>
+        <img src="https://example.com/pizza.jpg" alt="Pizza" width="300" style="display: block; margin: 20px auto; border-radius: 8px; border: 2px solid #4CAF50;">
+        <p style="font-size: 1.2em; text-align: center; color: #555;">პიცა - მსოფლიოში ერთ-ერთი ყველაზე პოპულარული საჭმელი. მისი მრავალფეროვანი ტოპინგებით, ის შეიძლება იყოს ნებისმიერი ადამიანის საყვარელი საჭმელი!</p>
+    </div>
+
+    <!-- მესამე საჭმელი: შაორმა -->
+    <div style="width: 80%; margin: 20px auto; padding: 20px; border: 2px solid black; background-color: #fff; ">
+        <h2 style="color: #333; font-size: 2em; text-align: center;">შაორმა</h2>
+        <img src="https://example.com/shawarma.jpg" alt="Shawarma" width="300" style="display: block; margin: 20px auto; ; border: 2px solid #4CAF50;">
+        <p style="font-size:large; text-align: center; color: #555;">შაორმა - ის გემრიელი კერძი, რომელიც მომზადდება ხორცის, სალათის, ტომატის და სოუსების კომბინაციით. პოპულარული სწრაფი კვების კერძი!</p>
+    </div>
+
+    
+</body>
+</html>
+
+
+
+
+
