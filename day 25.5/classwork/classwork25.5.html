@@ -1,0 +1,62 @@
+<!-- შექმენით სარეგისტრაციო ფორმა, სადაც მომხმარებელი შეიყვანს:
+
+სახელს
+გვარს
+ემაილს
+პაროლს
+
+Gender-ს (გამოიყენეთ radio (უნდა შეეძლოს მხოლოდ 1ის არჩევა)მინიშნება = name)
+
+ასევე გქონდეთ submit ღილაკი (დადასტურების ღილაკი)
+
+თქვენი ინფუთები სწორედ უნდა იყვნენ დაკავშირებული label-ებთან id-ების მეშვეობით
+და ფორმის დადასტურების შემდეგ სწორედ უნდა იყოს მონაცემები დახარისხებუი (name 
+ატრიბუტის მეშვეობით) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form action="/submit">
+        <!-- სახელი -->
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required>
+        <br><br>
+
+        <!-- გვარი -->
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required>
+        <br><br>
+
+        <!-- ელფოსტა -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <!-- პაროლი -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+
+        <!-- სქესი -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+        <br><br>
+
+        <!-- Submit ღილაკი -->
+        <input type="submit">Register</input>
+    </form>
+</body>
+</html>
