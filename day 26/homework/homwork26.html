@@ -32,25 +32,25 @@
 <body>
     <table border="1"  align="center">
         <tr>
-            <th>Sr. No</th>
-            <th>Roll No</th>
-            <th>Name</th>
-            <th>Team</th>
+            <th class="column">Sr. No</th>
+            <th class="column">Roll No</th>
+            <th class="column">Name</th>
+            <th class="column">Team</th>
         </tr>
         <tr>
-            <td>1</td>
+            <td class="column">1</td>
             <td>1001</td>
             <td>John</td>
             <td>Red</td>
         </tr>
         <tr>
-            <td>2</td>
+            <td class="column">2</td>
             <td>1002</td>
             <td>Peter</td>
             <td>Blue</td>
         </tr>
         <tr>
-            <td>3</td>
+            <td class="column">3</td>
             <td>1003</td>
             <td>Henry</td>
             <td>Green</td>
@@ -68,34 +68,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link  rel="stylesheet"  href="./style.css"
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Friends' Ages</title>
-    <style>
-        table {width: 60;border-collapse: collapse;}
-        th, td {border: 2px solid black;text-align: center;padding: 10px;}
-        th {background-color: lightgray;}
-        td:nth-child(1) {color: blue; background-color: lightyellow; }
-
-        td:nth-child(2) {color: green; background-color: lightpink; }
-    </style>
+    
 </head>
 <body>
     <table>
         <tr>
-            <th>Name</th>
+            <th class="column">Name</th>
             <th>Age</th>
         </tr>
         <tr>
-            <td>gabo</td>
+            <td class="column">gabo</td>
             <td>25</td>
         </tr>
         <tr>
-            <td>saba</td>
+            <td class="column">saba</td>
             <td>30</td>
         </tr>
         <tr>
-            <td>luka</td>
+            <td class="column">luka</td>
             <td>28</td>
         </tr>
     </table>
@@ -109,14 +103,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet"  href="./style.css"
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Headings with Colors</title>
-    <style>
-        #heading1 {color: red; /* Red color for h1 */}
-        #heading2 {color: blue; /* Blue color for h2 */}
-        #heading3 {color: green; /* Green color for h3 */ }
-    </style>
 </head>
 <body>
     <h1 id="heading1">This is Heading 1</h1>

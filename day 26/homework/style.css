@@ -1,0 +1,26 @@
+#heading1 {color: red; }
+#heading2 {color: blue; }
+#heading3 {color: green;  }
+
+
+
+
+
+
+table {width: 60;border-color: green;}
+        td {border: 2px solid black;text-align: center;padding: 10px;}
+        th{border: 2px solid black;text-align: center;padding: 10px;}
+        
+        td{color: blue; }
+        td {color: green;  }
+        .column {
+            background-color: orange;
+        }
+
+        .column{
+            background-color: orange;
+        }
+
+
+
+
