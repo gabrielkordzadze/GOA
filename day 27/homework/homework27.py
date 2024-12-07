@@ -15,6 +15,7 @@ def even_or_odd(number):
         print("კენტია")
 
 even_or_odd(5)
+even_or_odd(6)
 
 
 
@@ -28,6 +29,8 @@ def num(number):
         print("რიცხვი ნულის ტოლია")
 
 num(2)
+num(-2)
+num(0)
 
 
 
