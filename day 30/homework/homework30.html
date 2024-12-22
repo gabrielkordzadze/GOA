@@ -1,0 +1,116 @@
+<!-- <!-- 1)შექმენით საიტი თავისუფალ თემაზე, გამოიყენეთ ყველა ნასწავლი CSS-ის კუთვნილება და ლამაზად გასტილეთ თქვენი საიტი. გამოიყენეთ internal CSS-ი -->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>მეტი ინტერესი CSS-ისთან</title>
+    <style>
+        body {
+            
+            background-color: #f0f8ff;
+            color: #333;
+
+        }
+        
+        header {
+            background-color: #4CAF50;
+            color: white;
+            
+            text-align: center;
+        }
+
+        section {
+            
+            background-color: #fff;
+            
+        }
+
+        h1 {
+            font-size: 2.5;
+            color: #2C3E50;
+        }
+
+        p {
+            font-size: 1.2;
+           
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+        
+            
+            width: 100%;
+            
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>CSS-ის შესწავლა და პრაქტიკა</h1>
+</header>
+
+<section>
+    <h2>რა არის CSS?</h2>
+    <p>CSS (Cascading Style Sheets) არის ენა, რომელიც გამოიყენება ვებსაიტების დიზაინისთვის. მას შეუძლია განსაზღვროს როგორ უნდა გამოიყურებოდეს HTML ელემენტები.</p>
+</section>
+
+<section>
+    <h2>CSS-ის ფუნქციები</h2>
+    <p>CSS-ის დახმარებით, ჩვენ შეგვიძლია ვაკონტროლოთ ფერები, ტექსტის ზომა, განლაგება, გადასვლა და მრავალი სხვა ფუნქცია.</p>
+</section>
+
+<footer>
+    <p>ეს არის ვებ-გვერდის დაბოლოება.</p>
+</footer>
+
+</body>
+</html>
+
+<!-- 2) შექმენით 2 h1  ერთს მიანიჭეთ id მეორეს class და external css-ის გამოყენებით გასტილეთ განსხვავებულად -->
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>h1 სტილები</title>
+    <link rel="stylesheet" href="styles.css"> <!-- გარე CSS ფაილის გამორჩევა -->
+</head>
+<body>
+
+    <h1 id="special-heading">ეს არის h1 ელემენტი ID-ით</h1>
+    <h1 class="highlight-heading">ეს არის h1 ელემენტი CLASS-ით</h1>
+
+</body>
+</html>
+
+<!-- 3) კომენტარების სახით დაწერეთ რა განსხვავებაა id ,class და ელემენტის სელექტორს შორის და რომელია უფრო პრიორიტეტული  -->
+<!--
+ID  - ეწინააღმდეგება მხოლოდ ერთ ელემენტს, რადგან HTML-ში თითოეული id უნიკალურია.
+    - უფრო პრიორიტეტულია, რადგან მას აქვს უფრო მაღალი პრიორიტეტი CSS-ში.
+
+Class  - შეიძლება გამოიყენო რამდენიმე ელემენტზე, ანუ მას შეუძლია მიიღოს საერთო სტილი.
+    - ნაკლები პრიორიტეტი აქვს, ვიდრე id-ს.
+
+-->
+
+<!-- 4)შექმენით ოთხი ღილაკი, კლასების საშუალებით გასტილეთ მსგავსად ორი ღილაკი, ხოლო დანარჩენი 2 განსხვავებულად  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons Styling</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button class="primary-button">Button 1</button>
+    <button class="primary-button">Button 2</button>
+    <button class="secondary-button">Button 3</button>
+    <button class="secondary-button">Button 4</button>
+</body>
+</html>

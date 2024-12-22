@@ -1,0 +1,21 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+
+.first-paragraph {
+    color: lightgreen;
+}
+
+.second-paragraph {
+    background-color: darkblue;
+    color: yellow;
+}
+
+
+.centered-header {
+    text-align: center;
+    color: pink;
+    background-color: darkgreen;
+}

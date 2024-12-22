@@ -1,0 +1,77 @@
+body {
+    background-color: #f0f8ff;
+    color: #333;
+}
+    
+
+h1 {
+    text-align: center;
+    color: #2f4f4f;
+}
+
+.animal {
+    border: 2px solid #4682b4;
+    margin: 20px;
+    padding: 15px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.animal img {
+    width: 200px;
+    height: 200px;
+}
+
+h2 {
+    color: #ff6347;
+}
+
+.info {
+    color: #556b2f;
+    font-size: 1.1;
+}
+
+
+
+
+
+
+
+
+
+
+
+body {
+    background-color: red;
+    color: white;
+    padding: 0;
+}
+
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    color: yellow;
+}
+
+
+.food {
+    background-color: #ff4500; 
+    padding: 15px;
+}
+
+.food h2 {
+    color: lightgreen;
+}
+
+.food p {
+    color: lightblue;
+}
+
+
+section {
+    margin: 20px 0;
+}
