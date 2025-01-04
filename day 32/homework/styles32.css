@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 600px;
+    height: 800px;
+}
+
+.text {
+    position: absolute;
+}
+
+.hello {
+    top: 20px;
+    left: 460px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.world {
+    top: 70px;
+    left: 480px;
+    font-size: 24px;
+    text-decoration: line-through;
+}
+
+.exclamation {
+    top: 120px;
+    left: 30px;
+    font-size: 32px;
+    font-weight: bold;
+    color: red;
+}
+
+.goal {
+    top: 250px;
+    left: 220px;
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+.oriented {
+    top: 300px;
+    left: 260px;
+    font-size: 24px;
+    font-style: italic;
+}
+
+.academy {
+    top: 400px;
+    left: 90px;
+    font-size: 24px;
+    text-decoration: line-through;
+}
+
+.is {
+    top: 450px;
+    left: 80px;
+    font-size: 24px;
+}
+
+.the {
+    top: 520px;
+    left: 310px;
+    font-size: 24px;
+    color: green;
+    text-decoration: underline;
+}
+
+.best {
+    top: 550px;
+    left: 350px;
+    font-size: 36px;
+    font-weight: bold;
+    color: gray;
+    text-decoration: underline;
+}
+
+.one {
+    top: 700px;
+    left: 460px;
+    font-size: 24px;
+}
+
+
+
+
+
+/* დავალება 2 */
+.wave-underline{
+    color: black;
+    text-decoration: underline wavy green;
+}
+
+
+/* დავალება 3 */
+.dashed-lines{
+    color: black;     /* ტექსტის ფერი */
+    border-top: 2px dashed red;     /* ზემოდან ხაზი */
+    border-bottom: 2px dashed red;    /* ქვემოდან ხაზი */
+}
+
+
+
+/* დავალება 4 */ 
+.center-dashed-line {
+    color: black; /* ტექსტის ფერი */
+    font-size: 16px; /* ტექსტის ზომა */
+    text-align: center; /* ტექსტის განლაგება */
+}
+
+.center-dashed-line {
+    position: absolute;
+    top: 50%; /* ცენტრში განთავსება */
+    left: 0;
+    width: 100%;
+    border-top: 2px dashed blue; /* წყვეტილი ლურჯი ხაზი */
+   
+}
+
+
+
+/* დავალება 5 */
+
+/* წითელი ტექსტი */
+.red {
+    color: rgb(255, 0, 0); /* RGB წითელი */
+}
+
+/* ცისფერი ფონი */
+.cyan-bg {
+    background-color: rgb(0, 255, 255); /* RGB ცისფერი */
+    color: rgb(0, 0, 0); /* შავი ტექსტი */
+}
+
+/* მწვანე ფონი */
+.green-bg {
+    background-color: rgb(0, 255, 0); /* RGB მწვანე */
+    color: rgb(255, 255, 255); /* თეთრი ტექსტი */
+}
