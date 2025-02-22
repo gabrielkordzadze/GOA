@@ -1,0 +1,23 @@
+#Surface Area and Volume of a Box
+def get_size(w,h,d):
+    #your code here
+    area = 2 * (w * h + h * d + d * w)
+    volume = w * h * d
+    return [area, volume]
+
+
+
+#Find min and max
+def get_min_max(seq): 
+    # your code here
+     return min(seq), max(seq)
+
+#Who ate the cookie?
+def cookie(x):
+    #Good Luck
+    if type(x) == str:
+        return "Who ate the last cookie? It was Zach!"
+    elif type(x) == int or type(x) == float:
+        return "Who ate the last cookie? It was Monica!"
+    else:
+        return "Who ate the last cookie? It was the dog!"

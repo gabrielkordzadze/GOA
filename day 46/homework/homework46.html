@@ -1,0 +1,56 @@
+<!-- 1)გააკეთეთ საიტი Table-ის გამოყენებით სადაც ახსნილი იქნება css-ის საზომი ერთეულები (rem,%,px,vh...) (შეგიძლიათ მოიძიოთ ინფორმაცია) -->
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS საზომი ერთეულები</title>
+    <link rel="stylesheet" href="styles46.css">
+</head>
+<body>
+    <h1>CSS საზომი ერთეულები</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ერთეული</th>
+                <th>აღწერა</th>
+                <th>მაგალითი</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>px</td>
+                <td>პიქსელები – ფიქსირებული ზომა, არ იცვლება ეკრანის ზომის მიხედვით.</td>
+                <td>width: 100px;</td>
+            </tr>
+            <tr>
+                <td>%</td>
+                <td>პროცენტი – დამოკიდებულია მშობელი ელემენტის ზომაზე.</td>
+                <td>width: 50%;</td>
+            </tr>
+            <tr>
+                <td>em</td>
+                <td>დამოკიდებულია მშობელი ელემენტის ფონტის ზომაზე.</td>
+                <td>font-size: 2em; (თუ მშობელი 16px-ია, ეს იქნება 32px)</td>
+            </tr>
+            <tr>
+                <td>rem</td>
+                <td>დამოკიდებულია root ელემენტის (`html`) ფონტის ზომაზე.</td>
+                <td>font-size: 1.5rem; (თუ root 16px-ია, ეს იქნება 24px)</td>
+            </tr>
+            <tr>
+                <td>vh</td>
+                <td>ვერტიკალური ხედვის სიმაღლის 1%.</td>
+                <td>height: 50vh; (ეკრანის 50%)</td>
+            </tr>
+            <tr>
+                <td>vw</td>
+                <td>ჰორიზონტალური ხედვის სიგანის 1%.</td>
+                <td>width: 80vw; (ეკრანის 80%)</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
