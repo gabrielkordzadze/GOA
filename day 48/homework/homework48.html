@@ -1,0 +1,56 @@
+<!-- 1) კომენტარების სახით ჩამოწერეთ position-ის კუთვნილებები (properties) და ახსენით თუ რას აკეთებს თითოეული მათგანი. -->
+ 
+<!-- 1. relative - ელემენტი განლაგებულია თავის ჩვეულებრივ ადგილას (ძირითადი ფლოუში), მაგრამ მას შეუძლია შეიცვალოს ადგილმდებარეობა, 
+ ისრებზე (top, left, right, bottom) მიმართ. ეს ადგენს ელემენტის ახალ ადგილს, ხოლო მისი საწყისი ადგილმდებარეობა არ იცვლება 
+ (იგი კვლავ გავლენას ახდენს სხვა ელემენტებზე).-->
+
+
+<!-- 2.absolute - ელემენტი განლაგებულია თავისი ყველაზე ახლო განლაგებულ პოზიციურ (ან relative, absolute ან fixed–ზე) მფლობელის მიმართ. 
+ თუ ასეთი ელემენტი არ არსებობს, იგი განლაგდება გვერდის მიხედვით. absolute-ის პოზიცირება დამოკიდებულია მის მშობელ ელემენტზე. -->
+
+
+<!-- 2) საიტზე შექმენით  მსგავსი განლაგებები flex-ის გამოყენებით: -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layouts</title>
+    <link rel="stylesheet" href="styles.css"> <!-- გარე CSS ფაილი -->
+</head>
+<body>
+    <!-- პირველი განლაგება (მოზაიკური სტილი) -->
+    <div class="mosaic-container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <!-- მეორე განლაგება (ორმწკრივიანი) -->
+    <div class="column-layout">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+
+    <!-- მესამე განლაგება (Flexbox ორი სექციით) -->
+    <div class="flexbox-container">
+        <div class="left">Flexbox</div>
+        <div class="right">
+            <div class="top"></div>
+            <div class="bottom">
+                <div class="bottom-left"></div>
+                <div class="bottom-right"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
