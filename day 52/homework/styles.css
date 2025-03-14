@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.hammer-container {
+    position: relative;
+}
+
+.hammer {
+    width: 20px;
+    height: 100px;
+    background-color: saddlebrown;
+    bottom: 0;
+    left: 50%;
+    transform-origin: top center;
+    transition: transform 0.3s;
+}
+
+.head {
+    width: 50px;
+    height: 20px;
+    background-color: dimgray;
+    position: absolute;
+    top: -10px;
+    left: -15px;
+}
+
+.nail {
+    width: 10px;
+    height: 10px;
+    background-color: #8B4513;
+    position: absolute;
+    bottom: 60px; /* ლურსმანი ჩაქუჩის ნაკვეთზე */
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/* როდესაც მაუსი მიდის ჩაქუჩის გვერდით, ჩაქუჩი დაეცემა ლურსმანს */
+.hammer-container:hover .hammer {
+    transform: rotate(90deg); /* ჩაქუჩი წვდება ლურსმანს */
+}

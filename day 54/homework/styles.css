@@ -1,0 +1,130 @@
+/* 1 დავალება */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.holiday {
+    width: 50%;
+    text-align: center;
+}
+
+.holiday img {
+    width: 100%;
+    height: auto;
+}
+
+.holiday p {
+    font-size: 18px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .holiday {
+        width: 80%;  /* when screen size is smaller, it becomes 80% */
+    }
+
+    .holiday p {
+        font-size: 16px;  /* smaller font size for small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .holiday {
+        width: 90%;  /* even smaller screens, width becomes 90% */
+    }
+
+    .holiday p {
+        font-size: 14px;  /* even smaller font size */
+    }
+}
+
+
+/* 2 დავალება */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.responsive-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dot {
+    width: 30%;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .dot {
+        width: 45%;  /* for smaller screens, width becomes 45% */
+    }
+}
+
+@media (max-width: 480px) {
+    .dot {
+        width: 100%;  /* for mobile screens, width becomes 100% */
+    }
+}
+
+
+/* 4 დავალება */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.site-content {
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+header, main, footer {
+    margin-bottom: 20px;
+}
+
+article {
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .site-content {
+        width: 60%;  /* for smaller screens, width becomes 60% */
+    }
+}
+
+@media (max-width: 480px) {
+    .site-content {
+        width: 100%;  /* for very small screens, width becomes 100% */
+    }
+}

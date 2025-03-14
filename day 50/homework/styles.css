@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.card-container {
+    background: url('./images/bg-pattern-top.svg'), #20b2cc;
+    padding: 1000px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-card {
+    background-color: white;
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+    height: 100px;
+    background: url('./images/bg-pattern-card.svg'), #20b2cc;
+}
+
+.profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-top: -40px;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: rgb(85, 85, 85);
+}
+
+.age {
+    color: gray;
+    font-weight: normal;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.location {
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    border-top: 1px solid #eee;
+}
+
+.stats div {
+    text-align: center;
+}
+
+.stats strong {
+    display: block;
+    font-size: 16px;
+}
+
+.stats span {
+    font-size: 12px;
+    color: gray;
+}
