@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+
+.container {
+    display: flex;
+    gap: 20px; 
+}
+
+
+.black-box {
+    width: 250px;
+    height: 250px;
+    background-color: black;
+    transition: background-color 0.3s;
+}
+
+.black-box:hover {
+    background-color: blue;
+}
+
+
+.transform-box {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    transition: transform 0.5s;
+}
+
+.transform-box:hover {
+    transform: translate(-50px, 100px) scale(2) rotate(-180deg);
+}
