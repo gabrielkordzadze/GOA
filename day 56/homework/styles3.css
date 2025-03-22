@@ -1,0 +1,39 @@
+/* დავალება 3 */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+/* წითელი ფერის div */
+.red-box {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease, background-color 0.3s ease;
+}
+
+/* შავი ფერის div */
+.black-box {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    transition: transform 0.5s ease;
+}
+
+/* ანიმაცია მაუსის გადაატარებისას */
+.red-box:hover {
+    transform: rotate(20deg);
+    background-color: darkred;
+}
+
+.red-box:hover .black-box {
+    transform: scale(1.5);
+}

@@ -1,0 +1,57 @@
+/* დამატებითი დავალება */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.court {
+    width: 500px;
+    height: 400px;
+    position: relative;
+    background-color: #ffdd99;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.hoop {
+    width: 120px;
+    height: 20px;
+    background-color: #333;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    border: 5px solid #f8d24f;
+    box-sizing: border-box;
+}
+
+.ball {
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: transform 1s ease-in-out, bottom 1s ease-in-out;
+}
+
+/* როცა მაუსი მოედანზე მიდის, ბურთი წამოიწევს ზემოთ და დაიწყებს ბრუნვას */
+.court:hover .ball {
+    transform: translateX(-50%) translateY(-150px) rotate(720deg); /* ბურთი ზევით გადადის და ბრუნავს */
+    bottom: 100px; /* ბურთი მიდის ფარის დონეზე */
+}
+
+/* მაუსის ამოღების შემდეგ, ბურთი ჩამოდის */
+.court .ball {
+    bottom: 10px; /* ბურთი ბრუნდება თავის ადგილას */
+    transform: translateX(-50%) translateY(0) rotate(0deg); /* ბურთი ბრუნდება თავდაპირველ მდგომარეობაში */
+}

@@ -1,0 +1,24 @@
+/* დავალება 4 */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+/* სურათის სტილი */
+.animated-image {
+    width: 300px;
+    height: 300px;
+    transition: transform 0.5s ease, border-radius 0.5s ease;
+    object-fit: cover; /* სურათის სწორად ჩასმა */
+    border-radius: 50%; /* თავდაპირველად წრე */
+}
+
+/* მაუსის გადატარებისას */
+.animated-image:hover {
+    transform: scale(0.5) translate(150px, -200px); /* ზომის შემცირება და გადაადგილება */
+}
