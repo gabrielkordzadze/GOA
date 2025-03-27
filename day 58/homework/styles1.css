@@ -1,0 +1,60 @@
+/* 1) პირველი ანიმაცია */
+.box1 {
+    width: 150px; /* დივის სიგანე 150px */
+    height: 150px; /* დივის სიმაღლე 150px */
+    background-color: blue; /* ფერი ლურჯი */
+    position: absolute; /* აბსოლუტური პოზიციონირება */
+    top: 50px; /* 50px დისტანცია ზედა მხარეიდან */
+    left: 50px; /* 50px დისტანცია მარცხენა მხრიდან */
+    animation-name: spin-grow; /* ანიმაციის სახელი - spin-grow */
+    animation-duration: 5s; /* ანიმაციის ხანგრძლივობა 5 წამი */
+    animation-timing-function: ease-in-out; /* ანიმაციის ეფექტი (სრული დამშვიდება თავიდან და ბოლოში) */
+    animation-delay: 3s; /* ანიმაციის დაწყება 3 წამში */
+}
+
+@keyframes spin-grow {
+    0% { transform: rotate(0deg) scale(1); background-color: blue; } /* პირველ მდგომარეობაში: არ არის ტრიალი, არ არის გაზრდა */
+    100% { transform: rotate(360deg) scale(2); background-color: red; } /* ბოლო მდგომარეობაში: 360 გრადუსით ტრიალი, ზომის გაორმაგება, ფერი წითელი */
+}
+
+
+/* 2) მეორე ანიმაცია */
+.box2 {
+    width: 200px; /* დივის სიგანე 200px */
+    height: 200px; /* დივის სიმაღლე 200px */
+    background-color: green; /* ფერი მწვანე */
+    position: absolute; /* აბსოლუტური პოზიციონირება */
+    top: 250px; /* 250px დისტანცია ზედა მხარეიდან */
+    left: 50px; /* 50px დისტანცია მარცხენა მხრიდან */
+    animation-name: circle-slide; /* ანიმაციის სახელი - circle-slide */
+    animation-duration: 7s; /* ანიმაციის ხანგრძლივობა 7 წამი */
+    animation-iteration-count: infinite; /* ანიმაცია უსასრულოდ იმეორდება */
+}
+
+@keyframes circle-slide {
+    0% { border-radius: 0; transform: translateX(0); background-color: green; } /* პირველ მდგომარეობაში: მართკუთხა ფორმა, დასაწყისი მდებარეობა */
+    100% { border-radius: 50%; transform: translateX(100px); background-color: purple; } /* ბოლოს: მრგვალი ფორმა, გადატანილი 100px მარჯვნივ, ფერი ცვლილებული */
+}
+
+
+
+/* 3) მესამე ანიმაცია */
+.box3 {
+    width: 100px; /* დივის სიგანე 100px */
+    height: 100px; /* დივის სიმაღლე 100px */
+    background-color: red; /* ფერი წითელი */
+    position: absolute; /* აბსოლუტური პოზიციონირება */
+    bottom: 0; /* დასაწყისი მდებარეობა ქვედა მხარეს */
+    left: 50%; /* ცენტრში გადატანილია მარცხნიდან */
+    transform: translateX(-50%); /* ცენტრში მოთავსებულია */
+    animation-name: rise-expand; /* ანიმაციის სახელი - rise-expand */
+    animation-duration: 3s; /* ანიმაციის ხანგრძლივობა 3 წამი */
+    animation-timing-function: ease-in-out; /* ანიმაციის ეფექტი (სრული დამშვიდება თავიდან და ბოლოში) */
+}
+@keyframes rise-expand {
+    0% { bottom: 0; transform: translateX(-50%) scale(1); background-color: red; } /* პირველ მდგომარეობაში: ქვედა, არ გაზრდილი, წითელი ფერი */
+    100% { bottom: 80%; transform: translateX(-50%) scale(1.5); background-color: yellow; } /* ბოლოს: ზემოთ გადახედვა, ზომის გაზრდა, ყვითელი ფერი */
+}
+
+
+

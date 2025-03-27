@@ -38,20 +38,14 @@ body {
     background-color: orange;
     border-radius: 50%;
     position: absolute;
-    bottom: 10px;
+    bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
     transition: transform 1s ease-in-out, bottom 1s ease-in-out;
 }
 
-/* როცა მაუსი მოედანზე მიდის, ბურთი წამოიწევს ზემოთ და დაიწყებს ბრუნვას */
+/* როცა მაუსი მოედანზე მიდის, ბურთი ზევით აიწევს და კალათაში ჩავარდება */
 .court:hover .ball {
-    transform: translateX(-50%) translateY(-150px) rotate(720deg); /* ბურთი ზევით გადადის და ბრუნავს */
-    bottom: 100px; /* ბურთი მიდის ფარის დონეზე */
-}
-
-/* მაუსის ამოღების შემდეგ, ბურთი ჩამოდის */
-.court .ball {
-    bottom: 10px; /* ბურთი ბრუნდება თავის ადგილას */
-    transform: translateX(-50%) translateY(0) rotate(0deg); /* ბურთი ბრუნდება თავდაპირველ მდგომარეობაში */
+    transform: translateX(-50%) translateY(-260px);
+    bottom: 80px;
 }

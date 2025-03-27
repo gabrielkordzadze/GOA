@@ -1,0 +1,28 @@
+.box2 {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    animation-name: moveAndColorChange;
+    animation-duration: 5s;
+    
+    animation-iteration-count: infinite;
+}
+
+@keyframes moveAndColorChange {
+    25% {
+        transform: translateY(-40px);
+        background-color: red;
+    }
+    50% {
+        transform: translate(60px, -40px);
+        background-color: green;
+    }
+    75% {
+        transform: translate(60px, 0px);
+        background-color: yellow;
+    }
+    100% {
+        transform: translate(0px, 0px);
+        background-color: blue;
+    }
+}

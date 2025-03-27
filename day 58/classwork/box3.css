@@ -1,0 +1,21 @@
+.box3 {
+    width: 200px;
+    height: 150px;
+    background-color: blue;
+    animation-name: expandAndChangeColor;
+    animation-duration: 5s;
+    animation-delay: 2s;
+}
+
+@keyframes expandAndChangeColor {
+    0% {
+        width: 200px;
+        height: 150px;
+        background-color: blue;
+    }
+    100% {
+        width: 400px;
+        height: 300px;
+        background-color: orange;
+    }
+}
