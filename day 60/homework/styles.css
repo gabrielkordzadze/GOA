@@ -1,0 +1,105 @@
+/* საერთო სტილი */
+body {
+    background-color: #f5f1e9; /* კრემისფერი ფონ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* ბარათის კონტეინერი */
+.card {
+    display: flex;
+    max-width: 600px;
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* სურათის სტილი */
+.card img {
+    width: 50%;
+    object-fit: cover;
+}
+
+/* მარჯვენა მხარე (ტექსტი და ღილაკი) */
+.card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* კატეგორიის სტილი */
+.category {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: gray;
+}
+
+/* სათაურის სტილი */
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* აღწერის სტილი */
+.description {
+    font-size: 14px;
+    color: #555;
+}
+
+/* ფასების განლაგება */
+.price-container {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+/* მიმდინარე ფასი */
+.price {
+    font-size: 22px;
+    font-weight: bold;
+    color: green;
+}
+
+/* ძველი (გადახაზული) ფასი */
+.old-price {
+    font-size: 14px;
+    color: gray;
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+
+/* ღილაკის სტილი */
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* გლუვი ცვლილება */
+}
+
+/* აიკონის სტილი */
+.icon {
+    max-width: 16px; /* მაქსიმალური სიგანე */
+    max-height: 16px; /* მაქსიმალური სიმაღლე */
+    width: 100%; /* ნაკლები ზომა */
+    height: 100%; /* ნაკლები სიმაღლე */
+    margin-right: 8px; /* სივრცე აიკონსა და ტექსტს შორის */
+    vertical-align: middle; /* აიკონის სწორად განლაგება */
+}
+
+/* ღილაკის ჰოვერ ეფექტი */
+.button:hover {
+    background-color: darkgreen;
+}
