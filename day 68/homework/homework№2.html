@@ -1,0 +1,43 @@
+<!-- 2) რა განსხვავებაა let და const'ს შორის -->
+ <!-- let და const ორივე გამოიყენება ცვლადების შესაქმნელად ES6-დან (ECMAScript 2015). -->
+
+ <!-- განსხვავება: -->
+ <!-- let - გვაძლევს ცვლადის მნიშვნელობის შეცვლის საშუალებას. -->
+ <!-- const - ქმნის ცვლადს, რომლის მნიშვნელობა აღარ იცვლება (კონსტანტა). -->
+
+ <!-- let მაგალითი: -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+ </head>
+ <body>
+   <script>
+       let სახელი = "გიო";
+       სახელი = "გაბო"; // მნიშვნელობა იცვლება
+   </script>
+ </body>
+ </html>
+
+<!-- const მაგალითი: -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <script>
+       const ქვეყანა = "საქართველო";
+   </script>
+</body>
+</html>
+
+
+<!-- როდის გამოვიყენოთ: -->
+<!-- - let მაშინ, როცა მომავალში ცვლადის მნიშვნელობის შეცვლა საჭიროა. -->
+<!-- - const გამოიყენება, როცა ვიცით, რომ მნიშვნელობა არ უნდა შეიცვალოს. -->
+
