@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1) შექმენით რიცხვების სია და ამ სიიდან გამოიტანეთ მაქსიმალური და მინიმალური მნიშვნელობები
+        let numbers = [4, 7, 1, 9, 2];
+
+        let max = Math.max(...numbers);
+        let min = Math.min(...numbers);
+
+        
+        console.log("მაქსიმალური:", max);
+        console.log("მინიმალური:", min);
+
+        // 2) შემთხვევითობის პრინციპით 10'ის ფარგლებში გამოიტანეთ რიცხვი შემდეგ კი დაამრგვალეთ 
+        let num = Math.random() * 10;
+        let rounded = Math.round(num);
+
+        console.log("შემთხვევითი რიცხვი:", num);
+        console.log("დამრგვალებული:", rounded);
+
+
+        // 3) აიღეთ ნებისმიერი უარყოფითი რიცხვი და გადაიყვანეთ დადებითში
+        let negative = -8;
+        let positive = Math.abs(negative);
+
+        console.log("დადებითი:", positive);
+
+
+        // 4) შექმენით ცვლადი სადაც შეინახავთ ათწილად რიცხვს შემდეგ ეს რიცხვი დაამრგვალეთ ჯერ მაღლა შემდეგ კი დაბლა.
+        let num1 = 4.3;
+
+        let up = Math.ceil(num1);
+        let down = Math.floor(num1);
+
+        console.log("მაღლა დამრგვალებული:", up);
+        console.log("დაბლა დამრგვალებული:", down);
+
+
+        // 5) შექმენით ცვლადი, გადადაეცით რაღაც რიცხვი და დაბეჭდეთ იგი მე-4 ხარისხში. 
+        let number = 3;
+        let result = Math.pow(number, 4);
+
+        console.log("მე-4 ხარისხში:", result);
+
+
+
+        // 6) შექმენით ცვლადი მასში შეინახეთ ათწილადი რიცხვი და დაამრგვალეთ ისე როგორც მათემატიკაში მრგვალდება 
+        let num2 = 2.6;
+        let round = Math.round(num2);
+
+        console.log("დამრგვალებული:", round);
+
+
+        // 7) რა არის scope JavaScript'ში 
+        // Scope არის ადგილი, საიდანაც ცვლადს შეგვიძლია მივწვდეთ.
+    </script>
+</body>
+</html>

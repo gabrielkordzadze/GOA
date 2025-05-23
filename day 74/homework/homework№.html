@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 4)შექმენით 3 სია, პირველს შეაურთედ მეორე და შეინახეთ ცვალდშ, შემდეგ ეგ სია შეურთედ მესამეს და ისიც შეინახეთ ცვლადიშ, 
+        // შემდგომ splice ის საშუალების მე 2 ინდექსიდან ემ 5 ინდექსამდე წაშალეთ ელემენტები და მესამე ელემენტო გახადეთ undefined, 
+        // delete ის საშუალებით, შემდგომ გამოიტანეთ ამ სიის ბოლო ელემენტი
+
+        // 1) სამი სია
+        const list1 = [1, 2, 3];
+        const list2 = ['a', 'b', 'c'];
+        const list3 = [true, false, null];
+
+        // 2) პირველისა და მეორე სიების შეერთება და შენახვა ცვლადში
+        let combined12 = list1.concat(list2);
+
+        // 3) მიღებული სიის შეერთება მესამესთან და შენახვა ცვლადში
+        let combined123 = combined12.concat(list3);
+
+        // 4) splice-ის საშუალებით მე-2 ინდექსიდან მე-5 ინდექსამდე ელემენტების წაშლა
+        combined123.splice(2, 4);  // აქ 2 არის დაწყების ინდექსი, 4 - რაოდენობა (მე-2,3,4,5 ინდექსები)
+
+        // 5) მესამე ელემენტზე 'delete' ფუნქციის გამოყენებით ელემენტის შეცვლა undefined-ით
+        delete combined123[2];
+
+        // 6) საბოლოოდ, სიიდან ბოლო ელემენტის გამოყოფა და დაბეჭდვა
+        console.log(combined123[combined123.length - 1]);
+
+    </script>
+</body>
+</html>

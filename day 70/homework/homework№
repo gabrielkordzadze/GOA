@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1) შექმენით ობიექტი დასაც ჩამოწერთ თქვენს თავზე ინფორმაციას, შემდეგ ამ ობიექტიდან გამოიტანეთ თქვენი სახელი და გვარი.
+        let aboutMe1 = {
+            name: gabriel,
+            surname: kordzadze
+        }
+        console.log(about_me.name)
+        console.log(about_me.surname)
+
+        // 2) შექმენით ობიექტი სადაც შეიყვანთ სახელსა და გვარს შემდეგ კი გაანახლეთ მათი value'ბი და გამოიტანეთ ეს ობიექტი. 
+        let aboutMe2 = {
+            name: gio,
+            surname: gigauri
+        }
+
+        aboutMe2.name = "gabriel"
+        aboutMe2.surname = "kordzadze"
+
+        // 3) დაწერეთ დღეს შესწავლილი var' ის შესახებ და შეადარეთ იგი let და const'ს.
+
+        // 4) შექმენით ცვლადი რომელსაც გადასცემთ სტრინგს შემდეგ კი დააბრუნეთ ამ ცვლადის სიგრძე.
+        const name = "gabrieli"
+        console.log(name.Length)
+
+
+        // 5) შექმენით ცვლადი და გადაიყვანეთ იგი uppercase'ში შემდეგ კი lowercase'ში. 
+        const surname = "kordzaDZE"
+        console.log(surname.toUpperCase)
+        console.log(surname.toLowerCase)
+
+        // 6) დღეს ნასწავლ ყველა ფუნქციაზე გააკეთეთ 5-5 მაგალითი.
+    </script>
+</body>
+</html>
