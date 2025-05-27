@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1) შექმენით ცვლადი სადაც შეინახავთ თქვენთვის სასურველ ასაკს, თუ იქნება 13 წელზე ნაკლების გამოუტანეთ You are kid, 
+        // თუ იქნება 18 წელზე ნაკლების მაგრამ 13'ზე მეტის გამოუტანეთ You are not adult yet და თუ იქნება 18 წელზე მეტის 
+        // გამოუტანეთ You are adult
+        let age = 14;
+
+        if (age < 13) {
+            console.log("You are kid");
+        } else if (age < 18) {
+             console.log("You are not adult yet");
+        } else {
+            console.log("You are adult");
+        }
+
+
+
+        // 2) შექმენით ცვლადი სადაც შეიტანთ რაიმე რიცხვს, თუ რიცხვი იყოფა 2'ზე უნაშთოდ გამოიტანეთ ეს რიცხვი,
+        //  სხვა შემთხვევაში დააბრუნეთ "ეს რიცხვი კენტია"
+        let number = 7;
+
+        if (number % 2 === 0) {
+            console.log(number);
+        } else {
+            console.log("ეს რიცხვი კენტია");
+        }
+
+
+        // 3) პირველი დავალება შეასრულეთ python'შიც და დაწერეთ განსხვავებები python'ისა და js'ს შორის.
+        console.log("Python იყენებს indentation-ს, ხოლო JavaScript ბლოკებისთვის იყენებს { } ფრჩხილებს.");
+        console.log("Python-ში გამოიყენება print(), JavaScript-ში console.log()");
+        console.log("Python-ში ოპერატორებია 'and', 'or', 'not', ხოლო JS-ში '&&', '||', '!'");
+
+
+        // 4) რას აკეთებს "!" ოპერატორი ახსენით თქვენი სიტყვებით 
+        //"!" — ეს არის ლოგიკური უარყოფის ოპერატორი, რომელსაც ეწოდება "NOT".
+
+        // 5) შექმენით ცვლადი სადაც შეინახავთ რაღაც რიცხვს შემდეგ შეამოწმეთ თუ ეს რიცხვი იყობა 3'ზეც და 9'ზეც გამოიტანეთ
+        // ეს რიცხვი, სხვა შემთხვევაში დააბრუნეთ "task was not completed."
+        let num = 27;
+
+        if (num % 3 === 0 && num % 9 === 0) {
+            console.log(num);
+        } else {
+            console.log("task was not completed.");
+        }
+
+
+    </script>
+</body>
+</html>
