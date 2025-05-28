@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1) "!" ოპერატორზე შეასრულეთ 5 true და 5 false ოპერაციები.
+
+        // true
+        console.log(!(50 < 20));          // true
+        console.log(!(5 > 10));           // true
+        console.log(!(3 === 4));          // true
+        console.log(!(7 <= 2));           // true
+        console.log(!(7 < 6));            // true
+
+
+        // false
+        console.log(!(20 > 16));          // false
+        console.log(!(5 > 1)) ;           // false
+        console.log(!(100 === 100));      // false
+        console.log(!(6 >= 6));           // false
+        console.log(!(7 >= 7));           //false
+
+        // 2) შექმენით ცვლადი რომელშიც შეინახავთ 0-100 მდე რენდომ რიცხვს შემდეგ კი გამოიტანეთ შეფასება თუ მაგალითად
+        //  90'დან 100'ის ჩათვლით ექნება ქულა გამოუტანეთ "Grade A", თუ 80'დან 89'ის ჩათვლით გამოუტანეთ "Grade B" და ა.შ.
+        let score = Math.floor(Math.random() * 101);  // 0-100 შუალედი
+        console.log("Score:", score);
+
+        if (score >= 90 && score <= 100) {
+            console.log("Grade A");
+        } else if (score >= 80 && score <= 89) {
+            console.log("Grade B");
+        } else if (score >= 70 && score <= 79) {
+            console.log("Grade C");
+        } else if (score >= 60 && score <= 69) {
+            console.log("Grade D");
+        } else {
+            console.log("Grade F");
+        }
+
+        // 3) შექმენით ცვლადი სადაც 10'ის ფარგლებში რანდომულად შეინახავთ რაღაც რიცხვს თუ ეს რიცხვი მეტი იქნება 5'ზე 
+        // მაშინ დააბრუნეთ ეს რიცხვი სხვა შემთხვევაში დააბრუნეთ მისი კვადრატი.
+        let score2 = Math.floor(Math.random() * 11);
+        console.log("score2:", score2);
+
+        if (score2 > 5) {
+            console.log(score2 * score2);
+        } else {
+            console.log(score2);
+        }
+
+        // 4) შექმენით name ცვლადი სადაც შეინახავთ თქვენთვის სასურველ სახელს. თუ სახელის სიგრძე მეტია 5'ზე გამოიტანეთ 
+        // "this is my friend" სხვა შემთხვევაში დააბრუნეთ ეს სახელი.
+        let name = "gabrieli"
+        console.log("name:", name);
+
+        if (name.length > 5){
+            console.log("this is my friend");
+
+            }
+            else{
+                console.log(name);
+            }
+
+        
+    </script>
+</body>
+</html>
