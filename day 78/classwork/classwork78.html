@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Prompt Tasks</title>
+</head>
+<body>
+  <script>
+    // 1)
+    if (age1 <= 14) {
+      alert("you are kid");
+    } else if (age1 <= 18) {
+      alert("you are not adult yet");
+    } else {
+      alert("you are adult");
+    }
+
+    // 2) 
+    let name2 = prompt("შეიყვანე შენი სახელი (ან დატოვე ცარიელი):");
+
+    if (name2) {
+      alert(`Hello, ${name2}!`);
+    } else {
+      name2 = "guest";
+      alert(`Hello, ${name2}!`);
+    }
+
+    // 3) 
+    let name3 = prompt("შეიყვანე შენი სახელი:");
+    let age3 = Number(prompt("შეიყვანე შენი ასაკი:"));
+
+    if (age3 <= 18) {
+      alert(`you are not adult yet '${name3}'!`);
+    } else {
+      alert(`Hello '${name3}'!`);
+    }
+  </script>
+</body>
+</html>
