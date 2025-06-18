@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // დღეს გაკვეთილის 90% დაეთმო Kahoot-ს ამიტომაც დავალებად გექნებათ მხოლოდ Ternary ოპერატორზე (?) 10 მაგალითი 
+        // (მაგალითები ნელნელა უნდა გართულდეს)
+
+        // 1. ლუწია თუ კენტია
+        let num = 3;
+        let result = (num % 2 === 0) ? "ლუწია" : "კენტია";
+        console.log(result);
+
+        // 2. ასაკის შემოწმება
+        let age = 17;
+        let access = (age >= 18) ? "დაშვებულია" : "აკრძალულია";
+        console.log(access);
+
+        // 3. დილაა თუ საღამო
+        let isMorning = false;
+        let greeting = isMorning ? "დილა მშვიდობისა" : "საღამო მშვიდობისა";
+        console.log(greeting);
+
+        // 4. დადებითია, უარყოფითია თუ ნულია 
+        let x = 0;
+        let sign = (x > 0) ? "დადებითი" : (x < 0) ? "უარყოფითი" : "ნულია";
+        console.log(sign);
+
+        // 5. მაქსიმალურის პოვნა ორ რიცხვს შორის
+        let a = 12, b = 9;
+        let max = (a > b) ? a : b;
+        console.log("მაქსიმუმია:", max);
+
+        // 6. ჩაწერე EVEN ან ODD ერთ ხაზად
+        let n = 8;
+        console.log(n % 2 === 0 ? "Even" : "Odd");
+
+        // 7. ყველაზე პატარა სამი რიცხვდან
+        let a1 = 5, b1 = 2, c = 7;
+        let min = (a1 < b1) ? ((a1 < c) ? a1 : c) : ((b1 < c) ? b1 : c);
+        console.log("უმცირესი:", min);
+
+        // 8. მომხმარებელი არის თუ არა ადმინი
+        let username = "admin";
+        let message = (username === "admin") ? "მოგესალმები, ადმინო!" : "გთხოვ გაიარეთ ავტორიზაცია";
+        console.log(message);
+
+        // 9. სასწავლო შფასება
+        let score = 85;
+        let grade = (score >= 90) ? "A" : (score >= 80) ? "B" : (score >= 70) ? "C" : "დაბალი ქულა";
+        console.log("შენი შეფასება:", grade);
+
+        // 10. მომხმარებელი ონლაინია თ არა და წერს თუ არა
+        let online = true;
+        let typing = false;
+
+        let status = online ? (typing ? "წერს..." : "ონლაინშია") : "ოფლაინშია";
+        console.log(status);
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

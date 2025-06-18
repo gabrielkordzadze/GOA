@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1)მომხარებელს შემოატანინეთ ციფრი, შემდეი 0 იდან ამ რიცზვამდე დაპრინტეთ ყველა რიცხვი, დაიხმარეთ რესურები, გამოიყენეთ while loop (javascript) (NOT python)
+        let num = prompt("შეიყვანე რიცხვი:");
+        num = Number(num); // გადავაქციოთ რიცხვად
+
+        let i = 0;
+        while (i <= num) {
+            console.log(i);
+            i++;
+        }
+
+
+        // 2)მომხარებელს შემოატანინეთ სახელი, შემდეგ სანამ ამ სახელის სიგრძე ნაკლებია 10ზე, შემოატანინეთ ახლიდან 
+        // გამოიყენეთ while loop (javascript) (NOT python)
+        let name = prompt("შეიყვანე შენი სახელი:");
+
+        while (name.length < 10) {
+            name = prompt("სახელი უნდა შეიცავდეს მინიმუმ 10 სიმბოლოს. თავიდან სცადე:");
+        }
+
+        console.log("მადლობა, შენი სახელია:", name);
+
+
+        // 3)მომხარებელს შემოატანინეთ პინკოდი, შემდეგ სანამ ეს პინკოდი არ უდრის 6446 ს, შემოატანინეთ ახლიდან
+        // გამოიყენეთ while loop (javascript) (NOT python)
+        let pin = prompt("შეიყვანე პინკოდი:");
+
+        while (pin !== "6446") {
+            pin = prompt("არასწორია! სცადე თავიდან:");
+        }
+
+        console.log("პინკოდი სწორია!");
+
+
+        // 4)მომხარებელს შემოატანინეთ პაროლი, სანამ ეს პაროლი არ უდრის "ვანოჩკა" ს, შემოატანინეთ ახლიდან
+        // გამოიყენეთ while loop (javascript) (NOT python)
+        let password = prompt("შეიყვანე პაროლი:");
+
+        while (password !== "ვანოჩკა") {
+            password = prompt("არასწორია! სცადე თავიდან:");
+        }
+
+        console.log("პაროლი სწორია!");
+
+    </script>
+</body>
+</html>
