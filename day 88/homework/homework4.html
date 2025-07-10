@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="addBtn">Add 2</button>
+
+    <script>
+    let num = 0; // გლობალური ცვლადი, რომელიც ინახავს მნიშვნელობას
+
+    const button = document.getElementById('addBtn');
+
+    button.addEventListener('click', () => {
+        num += 2; // num-ს 2-ს ვუმატებთ
+        console.log(num); // ვბეჭდავთ ახალ მნიშვნელობას კონსოლში
+    });
+    </script>
+
+
+</body>
+</html>

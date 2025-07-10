@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="greetBtn">Say Hello</button>
+
+    <script>
+    // გლობალური ცვლადი სახელისთვის
+    const name = "Gabriel";
+
+    // ვიღებთ ღილაკის ელემენტს
+    const button = document.getElementById('greetBtn');
+
+    // კლიკის მოვლენის მსმენელი
+    button.addEventListener('click', () => {
+        // კონსოლში გამოვაქვეყნოთ ტექსტი, სადაც name ცვლადია ჩასმული
+        console.log(`Hello ${name}!`);
+    });
+    </script>
+
+</body>
+</html>

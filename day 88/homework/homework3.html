@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+    სკოუპი ნიშნავს რომელი ცვლადებია ხელმისაწვდომი სად.
+
+    1) გლობალური სკოუპი: ცვლადები, რომლებიც არის პროგრამის ნებისმიერ ადგილას ხელმისაწვდომი.
+
+    2) ლოკალური სკოუპი: ცვლადები, რომლებიც არის მხოლოდ ფუნქციის შიგნით ხელმისაწვდომი.
+
+    3) ბლოკ სკოუპი: ES6-ით შემოღებული, let და const ცვლადები არიან ხელმისაწვდომები მხოლოდ კუდში {...} სადაც არიან გამოცხადებულები.
+
+    */
+
+    // გლობალური ცვლადი
+    let globalVar = "მე ვარ გლობალური ცვლადი";
+
+    function myFunction() {
+    // ლოკალური ცვლადი
+    let localVar = "მე ვარ ლოკალური ცვლადი";
+
+    if (true) {
+        // ბლოკის ფარგლებში გამოცხადებული ცვლადი
+        let blockVar = "მე ვარ ბლოკ სკოუპის ცვლადი";
+        console.log(blockVar); // აქ მუშაობს
+    }
+
+    // console.log(blockVar); // error, blockVar არ ჩანს აქ
+
+    console.log(localVar);  // აქ მუშაობს, იმიტომ რომ ლოკალური სკოუპია
+    }
+
+    myFunction();
+
+    console.log(globalVar); // მუშაობს
+
+    // console.log(localVar); // error, localVar არ არის გლობალური
+
+    </script>
+</body>
+</html>
