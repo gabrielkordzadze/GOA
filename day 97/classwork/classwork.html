@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grid Layout</title>
+<style>
+  .grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* ზევით: დიდი + პატარა */
+    grid-template-rows: 1fr 1fr;    /* 2 ხაზად */
+    gap: 10px;
+    height: 100vh;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .item {
+    width: 100%;
+    height: 100%;
+  }
+
+  .green { background-color: #7CB342; }
+  .purple { background-color: #9C27B0; }
+  .orange { background-color: #F57C00; }
+
+  .bottom-left {
+    grid-column: 1 / 2; /* პირველი სვეტი */
+    grid-row: 2 / 3;    /* მეორე ხაზი */
+  }
+
+  .bottom-right {
+    grid-column: 2 / 3; /* მეორე სვეტი */
+    grid-row: 2 / 3;    /* მეორე ხაზი */
+  }
+</style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="item green"></div>
+    <div class="item purple"></div>
+    <div class="item orange bottom-left"></div>
+    <div class="item orange bottom-right"></div>
+  </div>
+</body>
+</html>

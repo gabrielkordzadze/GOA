@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newsletter Signup Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <div class="container">
+      <!-- Form section -->
+      <section class="form-section">
+        <h1>Subscribe to our newsletter</h1>
+        <p>Stay updated with the latest news and offers.</p>
+
+        <form id="signup-form" novalidate>
+          <div class="form-control">
+            <input type="email" id="email" placeholder="Email address" required>
+            <span class="error-message">Valid email required</span>
+          </div>
+          <button type="submit">Subscribe</button>
+        </form>
+      </section>
+
+      <!-- Success message section -->
+      <section class="success-section hidden">
+        <h1>Thank you for subscribing!</h1>
+        <p>A confirmation email has been sent to <span id="user-email"></span>. Please open it and click the button inside to confirm your subscription.</p>
+        <button id="dismiss-btn">Dismiss message</button>
+      </section>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

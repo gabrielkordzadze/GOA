@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // 1) შექმენით სია სადაც შეინახავთ ელემენტებს და ასევე ერთი ცვლადი რომელსაც გაუტოლებთ ცარიელ სტრინგს შემდეგ for in ის საშუალებით გადაუარეთ 
+    // ამ სიის ინდექსებს და ცარიელ ცვლადში დაამატეთ მხოლოდ ლუწ ინდექსზე მდგომი ელემენტები. 
+
+    let myList = ["ვაშლი", "მსხალი", "ბანანი", "ატამი", "ალუბალი"];
+    let result = "";
+
+    for (let index in myList) {
+    if (index % 2 === 0) {
+        result += myList[index] + " ";
+    }
+    }
+
+    console.log("ლუწ ინდექსებზე მდგომი ელემენტები:", result);
+
+
+    // 2) შექმენით სია რომელსაც გადაუვლით for of ის მეშვეობით და გამოიტანეთ თოთოეული ელემენტი
+    let fruits = ["საზამთრო", "კივი", "მანგო", "ფორთოხალი"];
+
+    for (let fruit of fruits) {
+    console.log(fruit);
+    }
+
+    </script>
+</body>
+</html>

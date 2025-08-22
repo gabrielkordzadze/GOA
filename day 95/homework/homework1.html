@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iPhone Calculator</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <div id="calculator">
+    <!-- Display -->
+    <input type="text" readonly id="result">
+
+    <!-- Buttons -->
+    <div id="buttonsDiv">
+      <!-- Top function row -->
+      <button class="lightBlueBtn" onclick="clearDisplay()">C</button>
+      <button class="lightBlueBtn" onclick="evenOdd()">EvenOdd</button>
+      <button class="lightBlueBtn" onclick="display('%')">%</button>
+      <button class="orangeBtn" onclick="display('/')">÷</button>
+
+      <!-- Number row 7-9 -->
+      <button class="num" onclick="display('7')">7</button>
+      <button class="num" onclick="display('8')">8</button>
+      <button class="num" onclick="display('9')">9</button>
+      <button class="orangeBtn" onclick="display('*')">×</button>
+
+      <!-- Number row 4-6 -->
+      <button class="num" onclick="display('4')">4</button>
+      <button class="num" onclick="display('5')">5</button>
+      <button class="num" onclick="display('6')">6</button>
+      <button class="orangeBtn" onclick="display('-')">−</button>
+
+      <!-- Number row 1-3 -->
+      <button class="num" onclick="display('1')">1</button>
+      <button class="num" onclick="display('2')">2</button>
+      <button class="num" onclick="display('3')">3</button>
+      <button class="orangeBtn" onclick="display('+')">+</button>
+
+      <!-- Bottom row -->
+      <button class="num" onclick="display('**0.5')">√</button>
+      <button class="num zero" id="zeroBtn" onclick="display('0')">0</button>
+      <button class="num" onclick="display('**')">^</button>
+      <button class="orangeBtn" onclick="calculate()">=</button>
+    </div>
+  </div>
+
+  <script src="script1.js"></script>
+</body>
+</html>

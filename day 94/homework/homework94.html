@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="page">
+    <section class="card">
+      <h1>Contact Us</h1>
+      <form class="form" novalidate>
+        <div class="row two">
+          <div class="field">
+            <label for="firstName">First Name <span>*</span></label>
+            <input id="firstName" name="firstName" type="text" required>
+          </div>
+          <div class="field">
+            <label for="lastName">Last Name <span>*</span></label>
+            <input id="lastName" name="lastName" type="text" required>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field full">
+            <label for="email">Email Address <span>*</span></label>
+            <input id="email" name="email" type="email" required>
+          </div>
+        </div>
+
+        <div class="row">
+          <fieldset class="field full">
+            <legend>Query Type <span>*</span></legend>
+            <div class="choices">
+              <label class="choice">
+                <input type="radio" name="queryType" value="general" required>
+                <span>General Enquiry</span>
+              </label>
+              <label class="choice">
+                <input type="radio" name="queryType" value="support">
+                <span>Support Request</span>
+              </label>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="row">
+          <div class="field full">
+            <label for="message">Message <span>*</span></label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+        </div>
+
+        <div class="row">
+          <label class="consent">
+            <input id="consent" type="checkbox" required>
+            <span>I consent to being contacted by the team <span>*</span></span>
+          </label>
+        </div>
+
+        <button class="submit" type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
