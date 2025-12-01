@@ -1,0 +1,42 @@
+/* კონტეინერი */
+.container {
+  display: grid;
+  grid-template-rows: repeat(3, 100px);
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+  width: 330px;
+  height: 330px;
+  border: 2px solid black;
+  position: relative;
+}
+
+/* ელემენტები */
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+/* კონკრეტული ელემენტები და მათი grid-area + z-index */
+.red {
+  background-color: red;
+  grid-area: 1 / 1 / 2 / 2; /* პირველი რიგი, პირველი სვეტი */
+  z-index: 3;
+}
+
+.green {
+  background-color: green;
+  grid-area: 2 / 2 / 3 / 3; /* მეორე რიგი, მეორე სვეტი */
+  z-index: 2;
+}
+
+.blue {
+  background-color: blue;
+  grid-area: 3 / 3 / 4 / 4; /* მესამე რიგი, მესამე სვეტი */
+  z-index: 1;
+}

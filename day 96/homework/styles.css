@@ -1,0 +1,104 @@
+* {
+  margin: 0;               /* ყველა ელემენტს მოვუხსენი გარეთა დაშორებები */
+  padding: 0;              /* ყველა ელემენტს მოვუხსენი შიდა დაშორებები */
+  box-sizing: border-box;  /* ზომების გამოთვლა რომ იყოს ზუსტი, padding და border ჩაეთვალოს */
+}
+
+body {
+  height: 100vh;           /* სიმაღლე მთელ ეკრანს უტოლდება */
+  display: flex;           /* Flexbox – ცენტრში გასათანაბრებლად */
+  justify-content: center; /* ჰორიზონტალურად ცენტრში */
+  align-items: center;     /* ვერტიკალურად ცენტრში */
+  background-color: #000000; /* შავი ფონი, როგორც iPhone კალკულატორში */
+}
+
+/* კალკულატორის მთავარი კონტეინერი */
+#calculator {
+  border-radius: 28px;           /* მრგვალი კუთხეები */
+  padding: 20px;                 /* შიდა დაშორება */
+  background-color: #222;        /* მუქი ფონი */
+  display: flex;                 /* ვერტიკალური განლაგებისთვის */
+  flex-direction: column;        /* ელემენტები ერთ ხაზზე ქვევით ჩამოწკრიალდეს */
+  gap: 12px;                     /* დაშორება ელემენტებს შორის */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.7); /* ჩრდილი კონტეინერს */
+}
+
+/* ეკრანი (რიცხვების ჩვენება) */
+input#result {
+  font-size: 2.5rem;                 /* დიდი ტექსტი */
+  color: #ffffff;                    /* თეთრი ტექსტი */
+  text-align: right;                 /* მარჯვნივ გასწორება */
+  padding: 20px 15px;                /* შიდა დაშორება */
+  width: 100%;                       /* სრული სიგანე */
+  border-radius: 24px 24px 0 0;      /* ზედა კუთხეები მრგვალი */
+  border: none;                      /* ჩარჩო არ აქვს */
+  background-color: rgba(50,50,50,0.95); /* ნახევრად მუქი ფონური ფერი */
+  margin-bottom: 12px;               /* დაშორება ღილაკებისგან */
+  box-shadow: inset 0 -4px 6px rgba(255,255,255,0.05); /* შიდა ჩრდილი */
+}
+
+/* ღილაკების განლაგება */
+#buttonsDiv {
+  display: grid;                           /* ბადისებრი განლაგება */
+  grid-template-columns: repeat(4, 1fr);   /* 4 სვეტი */
+  gap: 12px;                               /* დაშორება ღილაკებს შორის */
+}
+
+/* ყველა ღილაკისთვის საერთო სტილი */
+button {
+  height: 84px;                 /* სიმაღლე */
+  border: none;                 /* ჩარჩო არ აქვს */
+  border-radius: 42px;          /* მრგვალი ღილაკები */
+  font-size: 28px;              /* ტექსტის ზომა */
+  font-weight: 700;             /* სქელი ტექსტი */
+  cursor: pointer;              /* მაუსი რომ ხელად იქცეს */
+  box-shadow: 0 6px 14px rgba(0,0,0,0.5); /* ჩრდილი ღილაკებზე */
+  transition: transform 0.1s, box-shadow 0.1s; /* ანიმაცია დაჭერისას */
+  display: flex;                /* ტექსტი ცენტრში */
+  justify-content: center;      /* ჰორიზონტალურად ცენტრში */
+  align-items: center;          /* ვერტიკალურად ცენტრში */
+}
+
+/* hover – როცა მაუსი გადაჰყავს */
+button:hover {
+  transform: translateY(-2px) scale(1.05); /* ოდნავ ამოტანა და გადიდება */
+}
+
+/* active – დაჭერის მომენტი */
+button:active {
+  transform: translateY(2px);              /* ოდნავ დაჭერილი ეფექტი */
+  box-shadow: 0 3px 8px rgba(0,0,0,0.5);   /* ჩრდილი მცირდება */
+}
+
+/* ჩვეულებრივი ციფრების ღილაკები */
+button:not(.orangeBtn):not(.lightBlueBtn) {
+  background-color: #dfe3e6; /* ღია ნაცრისფერი */
+  color: #000000;            /* შავი ტექსტი */
+}
+
+/* ოპერატორები (÷, ×, −, +, =) */
+.orangeBtn {
+  background: linear-gradient(180deg,#ff9500,#e08b00); /* iPhone-ის ნარინჯისფერი გრადიენტი */
+  color: #ffffff; /* თეთრი ტექსტი */
+}
+
+/* ფუნქციური ღილაკები (AC, ±, %) */
+.lightBlueBtn {
+  background-color: #c8d1dc; /* ღია ლურჯი */
+  color: #000000;            /* შავი ტექსტი */
+}
+
+/* 0 ღილაკი, ორმაგ სიგანეზე */
+#zeroBtn {
+  grid-column: span 2;       /* ორზე გადაჭიმული სვეტი */
+  text-align: left;          /* მარცხნივ ტექსტი */
+  padding-left: 28px;        /* შიდა დაშორება მარცხნივ */
+  border-radius: 42px;       /* მრგვალი */
+}
+
+/* პატარა ეკრანებისთვის */
+@media(max-width:420px){
+  button { height:70px; font-size:24px; }      /* ღილაკები პატარა */
+  input#result { font-size:2rem; padding:16px 12px; } /* ეკრანი პატარა */
+}
+

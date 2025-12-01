@@ -1,0 +1,30 @@
+.grid-1 {
+  width: 90%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+}
+
+.item {
+  background: #9ad40b;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+
+.i1 { grid-column: span 12; }
+.i2 { grid-column: span 6; }
+.i3 { grid-column: span 6; }
+.i4 { grid-column: span 4; }
+.i5 { grid-column: span 4; }
+.i6 { grid-column: span 4; }
+.i7 { grid-column: span 3; }
+.i8 { grid-column: span 3; }
+.i9 { grid-column: span 3; }
+.i10 { grid-column: span 3; }
+.i11, .i12, .i13, .i14, .i15, .i16 { grid-column: span 2; }
+.i17, .i18, .i19, .i20, .i21, .i22, .i23, .i24, .i25, .i26, .i27, .i28 { grid-column: span 1; }

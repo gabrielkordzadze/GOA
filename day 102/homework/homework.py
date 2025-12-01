@@ -1,0 +1,1 @@
+print("jer ar damiweria")

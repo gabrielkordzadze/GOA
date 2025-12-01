@@ -1,0 +1,21 @@
+.layout3 {
+  width: 90%;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto 300px auto;
+  gap: 15px;
+}
+
+.item3 {
+  padding: 40px;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+}
+
+.header { grid-column: 1 / 3; background: #10e6c4; }
+.sidebar { background: #d48700; }
+.content { background: #a2d80a; }
+.footer { grid-column: 1 / 3; background: #ad00e6; }
